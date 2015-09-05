@@ -8,5 +8,9 @@
 
 import Foundation
 
-println("Hello, World!")
+var beverage:Beverage = Espresso()
+println(beverage.getDescription() + " $" + String("\(beverage.cost())"))
 
+beverage = Mocha(beverage: beverage)
+
+println(beverage.getDescription() + " $" + String("\(beverage.cost())"))
